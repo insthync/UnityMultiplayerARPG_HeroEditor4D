@@ -728,10 +728,8 @@ MonoBehaviour:
     type: 3}
   warpPortalEntityPrefab: {fileID: 114740439826321916, guid: 8cdb82c44bf71094b950973e82c6c59e,
     type: 3}
-  playerCorpsePrefab: {fileID: 9036829038788336466, guid: d98696903f1afa34fba36b435c7fb329,
-    type: 3}
-  monsterCorpsePrefab: {fileID: 9036829038788336466, guid: d98696903f1afa34fba36b435c7fb329,
-    type: 3}
+  playerCorpsePrefab: {fileID: 0}
+  monsterCorpsePrefab: {fileID: 0}
   uiSceneGameplayPrefab: {fileID: 114088817493988554, guid: 4af36d4bdf0cf07409f4412130b793ec,
     type: 3}
   uiSceneGameplayMobilePrefab: {fileID: 114630585920460692, guid: 70474cf4f9f686c45b0305621722205f,
@@ -809,7 +807,9 @@ MonoBehaviour:
   currentPositionSaveMode: 0
   playerDropItemMode: 0
   playerDeadDropItemMode: 0
+  playerCorpseAppearDuration: 10
   monsterDeadDropItemMode: 0
+  monsterCorpseAppearDuration: 10
   dismantleFilter:
     includeJunk: 0
     includeArmor: 1
