@@ -4078,6 +4078,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isIdAssigned: 0
   id: 0
+  visibleMaterials: []
+  invisibleMaterials: []
+  fpsMaterials: []
   hiddingObjects: []
   hiddingRenderers: []
   fpsHiddingObjects: []
@@ -4215,6 +4218,9 @@ MonoBehaviour:
   alwaysVisible: 0
   doNotDestroyWhenDisconnect: 0
   poolingSize: 0
+  onGetInstance:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &4176351135039353152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4245,18 +4251,6 @@ MonoBehaviour:
     clientDataChannel: 0
     clientDeliveryMethod: 1
     value: 
-  syncTitleB:
-    behaviour: {fileID: 0}
-    elementId: 0
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 0
-    syncMode: 0
-    sendInterval: 0.1
-    dataChannel: 0
-    deliveryMethod: 2
-    clientDataChannel: 0
-    clientDeliveryMethod: 1
-    value: 
   ownerObjects: []
   nonOwnerObjects: []
   model: {fileID: 5971124356103686081}
@@ -4265,17 +4259,6 @@ MonoBehaviour:
   movementSecure: 0
   canSideSprint: 0
   canBackwardSprint: 0
-  direction2D:
-    behaviour: {fileID: 0}
-    elementId: 0
-    alwaysSync: 0
-    doNotSyncInitialDataImmediately: 1
-    syncMode: 0
-    sendInterval: 0.1
-    dataChannel: 0
-    deliveryMethod: 1
-    clientDataChannel: 0
-    clientDeliveryMethod: 1
   passengingVehicle:
     behaviour: {fileID: 0}
     elementId: 0
@@ -4730,7 +4713,6 @@ MonoBehaviour:
   sendOptions: 0
   sendInterval: 0.1
   stoppingDistance: 0.1
-  moveThreshold: 0.01
   snapThreshold: 5
   clientSyncTransformInterval: 0.05
   clientSendInputsInterval: 0.05
