@@ -515,7 +515,7 @@ namespace MultiplayerARPG.HeroEditor4D
             // Action
             Animator.SetFloat(ANIM_SPEED, playSpeedMultiplier);
             Animator.SetTrigger(animation.GetTriggerName());
-            AudioManager.PlaySfxClipAtAudioSource(animation.GetRandomAudioClip(), genericAudioSource);
+            AudioManager.PlaySfxClipAtAudioSource(animation.GetRandomAudioClip(), GenericAudioSource);
             // Waits by current transition + clip duration before end animation
             yield return new WaitForSecondsRealtime(animation.GetClipLength() / playSpeedMultiplier);
             // Waits by current transition + extra duration before end playing animation state
